@@ -8,14 +8,16 @@ class R006_LifecycleEx extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
+    // 다른 생명주기 메서드와는 달리 앞에 static 을 필요로 하고, 이 안에서는 this 롤 조회 할 수 없음
+    // 이 메서드는 컴포넌트가 처음 렌더링 되기 전에도 호출 되고, 그 이후 리렌더링 되기 전에도 매번 실행됨
     console.log("2. getDerivedStateFromProps CALL " + props.prop_value);
     return {};
-    // state를 갱신하기 위한 객체를 반환하거나, null을 반환하여 아무것도 갱신하지 않을 수 있음
+    // state를 갱신하기 위한 객체를 반환(특정 객체를 반환하게 되면 해당 객체 안에 있는 내용들이 컴포넌트의 state 로 설정됨)하거나, null을 반환하여 아무것도 갱신하지 않을 수 있음
   }
 
   render() {
     console.log("3. render CALL");
-    return <h2>[THIS IS RENDER CALL]</h2>;
+    return <h2>[THIS IS CONSTRUCTOR FUNCTION]</h2>;
   }
 }
 
