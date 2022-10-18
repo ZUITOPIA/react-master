@@ -40,3 +40,4 @@ class R008_LifecycleEx extends Component {
 export default R008_LifecycleEx;
 
 // 복습 : react에서 생명주기란, component의 생성-변경-소멸의 과정을 뜻함
+// shouldComponentUpdate 함수의 반환값에 따라 render 함수를 재실행할 수 있다 -> props or state 변수가 변경될 때 화면을 다시 그릴 수 있다
