@@ -1,24 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { Counter } from "./Counter";
-// import LifecycleEx from "./R008_LifecycleEx";
+import Es6 from "./R009_Es6";
 
 function App() {
-  const [isCounterOpen, setIsCounterOpen] = useState(false);
-  const handleCounterOpen = () => {
-    setIsCounterOpen((prev) => !prev);
-  };
   return (
     <>
-      {/* <div>
+      <div>
         <h1>Start React 200!</h1>
         <p>CSS 적용하기</p>
-        <LifecycleEx prop_value="FromApp.js" />
-      </div> */}
-      {/* Counter 예제로 더 이해해보기 */}
-      <div>
-        <button onClick={handleCounterOpen}>Show Counter</button>
-        {isCounterOpen && <Counter />}
+        <Es6 />
       </div>
     </>
   );
