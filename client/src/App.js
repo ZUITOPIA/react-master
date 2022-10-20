@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ArrowFunction from "./R013_ArrowFunction";
+import ForEach from "./R014_ForEach";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div>
         <h1>Start React 200!</h1>
         <p>CSS 적용하기</p>
-        <ArrowFunction />
+        <ForEach />
       </div>
     </>
   );
