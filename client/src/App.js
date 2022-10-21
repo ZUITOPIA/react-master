@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Map from "./R015_Map";
+import Jquery from "./R016_Jquery";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div>
         <h1>Start React 200!</h1>
         <p>CSS 적용하기</p>
-        <Map />
+        <Jquery />
       </div>
     </>
   );
